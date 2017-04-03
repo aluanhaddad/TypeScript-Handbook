@@ -319,7 +319,7 @@ So following our example, the `tsconfig.json` file should look like:
 
 Every time the compiler sees a relative module import in a subfolder of one of the `rootDirs`, it will attempt to look for this import in each of the entries of `rootDirs`.
 
-Note that the relative nature of `rootDirs` is not impacted by `paths`. It only to literally relative imports such as `import home from "./src/views/home"`. This holds even when `paths` is used to map absolute imports to what would otherwise be relative locations. For example, `rootDirs` would no longer apply if we changed the previous import to `import home from "views/home"` by mapping `views/*` to `src/views` via `paths`.
+Note that the relative nature of `rootDirs` is not impacted by `paths`. It only applies to literally relative imports such as `import home from "./src/views/home"`. This holds even when `paths` is used to map absolute imports to what would otherwise be relative locations. For example, `rootDirs` would no longer apply if we changed the previous import to `import home from "views/home"` by mapping `views/*` to `src/views` via `paths`.
 
 ## Tracing module resolution
 
